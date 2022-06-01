@@ -25,7 +25,7 @@ const userSchema = mongoose.Schema({
     },
     Image: String,
     token: {           //유효성 관리
-        type: Stirng
+        type: String
     },
     tokenExp: {        //토큰을 사용할 수 있는 기간 관리
         type: Number
@@ -34,4 +34,4 @@ const userSchema = mongoose.Schema({
 
 const User = mongoose.model('User', userSchema) //스키마를 모델로 감싸줌
 
-module.exports = {User} //다른 파일에서도 사용가능하게
+module.exports = { User } //다른 파일에서도 사용가능하게
